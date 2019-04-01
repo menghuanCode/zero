@@ -1,0 +1,132 @@
+/*最优浮动闭合方案（这是我们推荐的）：*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*+height:1%;}
+
+/* 很实用的抖动效果 */
+@keyframes bounce {
+    0% {
+        opacity: 1;
+        transform: scale(0, 0);
+    }
+    3% {
+        transform: scale(0.2909, 0.37203);
+    }
+    6% {
+        transform: scale(0.59685, 0.81382);
+    }
+    10% {
+        transform: scale(0.85548, 1.14452);
+    }
+    13% {
+        transform: scale(1.03794, 1.29368);
+    }
+    16% {
+        transform: scale(1.14088, 1.28177);
+    }
+    20% {
+        transform: scale(1.17694, 1.17694);
+    }
+    23% {
+        transform: scale(1.16606, 1.05246);
+    }
+    26% {
+        transform: scale(1.12889, 0.95928);
+    }
+    30% {
+        transform: scale(1.08275, 0.91725);
+    }
+    33% {
+        transform: scale(1.0397, 0.92061);
+    }
+    36% {
+        transform: scale(1.00644, 0.95014);
+    }
+    40% {
+        transform: scale(0.98522, 0.98522);
+    }
+    43% {
+        transform: scale(0.97516, 1.01147);
+    }
+    46% {
+        transform: scale(0.97367, 1.02332);
+    }
+    50% {
+        transform: scale(0.97763, 1.02237);
+    }
+    53% {
+        transform: scale(0.98414, 1.01405);
+    }
+    56% {
+        transform: scale(0.99098, 1.00417);
+    }
+    60% {
+        transform: scale(0.99677, 0.99677);
+    }
+    63% {
+        transform: scale(1.00085, 0.99343);
+    }
+    66% {
+        transform: scale(1.00315, 0.9937);
+    }
+    70% {
+        transform: scale(1.00396, 0.99604);
+    }
+    73% {
+        transform: scale(1.00371, 0.99883);
+    }
+    76% {
+        transform: scale(1.00288, 1.00091);
+    }
+    80% {
+        transform: scale(1.00185, 1.00185);
+    }
+    83% {
+        transform: scale(1.00089, 1.00178);
+    }
+    86% {
+        transform: scale(1.00014, 1.00112);
+    }
+    90% {
+        transform: scale(0.99967, 1.00033);
+    }
+    93% {
+        transform: scale(0.99944, 0.99974);
+    }
+    96% {
+        transform: scale(0.99941, 0.99948);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/* 很实用的页面向上滑动*/
+@keyframes flowAwayUp {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+}
+
+/* 很实用的页面向下滑动 */
+@keyframes flowAwayDown {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
